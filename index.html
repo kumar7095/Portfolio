@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <h1 class="nav-title">Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Hamburger Menu (Visible on small screens) -->
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+  <!-- Sidebar (Initially hidden, shown on small screens when clicked) -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>MENU</h2>
+      <span id="close-sidebar" class="close-btn">&times;</span>
+    </div>
+
+    <ul class="nav-links mt-3">
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+      <p class="sidebar-footer">&copy; 2025 Talari Kumar Swamy. All Rights Reserved.</p>
+  </div>
+</div>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h2>Hi, I'm <span>Talari Kumar Swamy</span></h2>
+      <p>A passionate front-end-developer with a love for building amazing web applications.</p>
+      <a href="#projects" class="btn btn-outline-warning">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="mt-3">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <span>HTML</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i> <!-- Empty star -->
+          </div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="skill">
+          <span>BootStrap</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="skill">
+          <span>React</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Git</span>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1: MadeEasyShop -->
+        <div class="project">
+          <h3>MadeEasyShop - E-commerce Website</h3>
+          <p>
+            Developed a fully responsive e-commerce platform with a user-friendly interface, enabling seamless product browsing. Key features include:
+          </p>
+          <ul>
+            <li>Responsive design for optimal viewing on all devices.</li>
+            <li>Product search functionality.</li>
+            <li>Clean and modern design with a focus on user experience.</li>
+            <li>Interactive elements like theme toggling and smooth scrolling.</li>
+          </ul>
+          <p>
+            <strong>Tech Stack:</strong> HTML, CSS, JavaScript, React, BootStrap.
+          </p>
+          <a href="https://kumar7095.github.io/MadeEasyShop/" class="btn btn-outline-secondary" target="_blank">Visit Website</a>
+        </div>
+
+        <!-- Project 2: Portfolio Website -->
+        <div class="project">
+          <h3>Portfolio Website</h3>
+          <p>
+            Designed and developed a responsive portfolio website to showcase my skills, projects, and professional experience. The website features:
+          </p>
+          <ul>
+            <li>Clean and modern design with a focus on user experience.</li>
+            <li>Fully responsive layout for seamless access on all devices.</li>
+            <li>Interactive elements like theme toggling and smooth scrolling.</li>
+            <li>Integration of a contact form for easy communication.</li>
+          </ul>
+          <p>
+            <strong>Tech Stack:</strong> HTML, CSS, JavaScript.
+          </p>
+          <a href="https://kumar7095.github.io/Portfolio/" class="btn btn-outline-secondary" target="_blank">Visit Website</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p style="font-family: 'Open Sans', sans-serif">I'm a web developer with expertise in HTML, CSS, JavaScript, and currently learning modern frameworks like React. I enjoy solving complex problems and creating user-friendly interfaces. I'm always eager to learn new technologies and improve my skills.</p>
+    </div>
+    <div class="resume-button-container btn btn-secondary">
+      <a href="https://drive.google.com/file/d/15C71ujEYPQ0Sve6UrTENky0jR7yfm7rm/view?usp=sharing" class="btn" target="_blank">
+        <i class="fas fa-download"></i> Click here to see My Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Talari Kumar Swamy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle" class="theme-toggle">
+    <i class="fas fa-moon"></i> <!-- Default icon for light mode -->
+    <span class="tooltip">Dark Mode</span> <!-- Tooltip text -->
+  </button>
+
+  <script src="script.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,486 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .nav-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+  nav h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+  }
+  
+  .hamburger i {
+    font-size: 1.5rem;
+  }
+
+  .nav-links-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between links */
+  }
+  
+  .nav-links li {
+    display: inline;
+    list-style: none;
+
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffc107; /* Change color on hover */
+  }
+  
+  /* Sidebar */
+  .sidebar{
+    position: fixed;
+    left: -250px; /* Initially hidden */
+    top: 0;
+    width: 250px;
+    height: 100vh; /* Full height */
+    background: #222;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced properly */
+    color: #fff;
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto; /* Keeps it scrollable if needed */
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #111;
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  .close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-btn:hover {
+  color: red;
+}
+  
+  .sidebar-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .sidebar-header hr {
+    border-color: #555;
+  }
+  
+  /* Close Button */
+  .close-sidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .close-sidebar:hover {
+    color: #FFD700;
+  }
+  
+  .sidebar .nav-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .sidebar .nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar .nav-links li a i {
+    margin-right: 10px;
+  }
+  
+  .sidebar-footer {
+    text-align: center; /* Center the text */
+    padding: 10px; /* Add padding */
+    font-size: 14px; /* Adjust font size if needed */
+    position: absolute;
+    bottom: 10px; /* Stick it to the bottom */
+    width: 100%;
+  }
+  
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+  }
+
+    .nav-links-container {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  
+    .sidebar {
+      left: -280px;
+    }
+
+    .sidebar.active {
+      display: block;
+      transform: translateX(0);
+  }
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: #007BFF;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  body.dark-theme #hero {
+    background: #007BFF !important;
+    color: #fff !important;
+  }
+  
+  #hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  #hero span {
+    color: #FFD700;
+  }
+  
+  #hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  
+  
+  /* About Section */
+  #about {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Skills Section */
+  #skills {
+    background: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  #skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill {
+    background: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 50px 0;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #contact-form button {
+    background: #FFD700;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #contact-form button:hover {
+    background: #e6b800;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Theme Toggle Button */
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    background: #0056b3;
+  }
+  
+  /* Dark Theme Styles */
+  body.dark-theme {
+    background: #121212;
+    color: #ffffff;
+  }
+  
+  body.dark-theme nav {
+    background: #1f1f1f;
+  }
+  
+  body.dark-theme #hero {
+    background: #1f1f1f;
+  }
+  
+  body.dark-theme #skills {
+    background: #2c2c2c;
+  }
+  
+  body.dark-theme .skill {
+    background: #007BFF;
+  }
+  
+  body.dark-theme #projects {
+    background: #1f1f1f;
+  }
+  
+  body.dark-theme .project {
+    background: #2c2c2c;
+  }
+  
+  body.dark-theme #contact {
+    background: #1f1f1f;
+  }
+  
+  body.dark-theme footer {
+    background: #1f1f1f;
+  }
+  
+  body.dark-theme .btn {
+    background: #FFD700;
+    color: #333;
+  }
+  
+  body.dark-theme .btn:hover {
+    background: #e6b800;
+  }
+  
+  /* Tooltip for Theme Toggle */
+  .theme-toggle .tooltip {
+    visibility: hidden;
+    width: 80px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  
+  .theme-toggle .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+  }
+  
+  .theme-toggle:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .resume-button-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center (optional) */
+    margin-top: 20px; /* Add some spacing above the button */
+  }
+  
+  .btn-secondary {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #6c757d; /* Bootstrap secondary button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268; /* Darker shade for hover effect */
+  }
